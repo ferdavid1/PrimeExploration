@@ -1,7 +1,8 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
-from sympy import isprime, primerange, randprime, prime, prevprime, nextprime
+from sympy import primerange
 import mpl_toolkits.mplot3d.axes3d as p3
+from scipy.stats import ks_2samp # kolmogorov-smirnov test, for two distributions
 
 x,y = list(np.random.randn(300)), list(np.random.randn(300))
 primes = list(primerange(0, len(x))) 
